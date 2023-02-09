@@ -9,14 +9,7 @@ environment:
 dependencies:
   intl: ^0.17.0
   path_provider: ^2.0.11
-  screenshot: ^1.2.3
   path_drawing: ^1.0.1
-  image_gallery_saver: ^1.7.1
-  optimized_gesture_detector:
-    git:
-      url: https://github.com/absar/OptimizedGestureDetector.git
-      #ref: null-safety
-      path: ./
   vector_math: ^2.1.2
   flutter:
     sdk: flutter

@@ -13,8 +13,8 @@ import 'package:mp_chart/mp/core/utils/color_utils.dart';
 import 'package:mp_chart/mp/core/utils/painter_utils.dart';
 import 'package:mp_chart/mp/core/utils/utils.dart';
 import 'package:mp_chart/mp/core/view_port.dart';
+import 'package:mp_chart/mp/optimized_gesture_listener/gesture_dectetor.dart';
 import 'package:mp_chart/mp/painter/painter.dart';
-import 'package:optimized_gesture_detector/gesture_dectetor.dart';
 
 abstract class Controller<P extends ChartPainter>
     implements AnimatorUpdateListener {

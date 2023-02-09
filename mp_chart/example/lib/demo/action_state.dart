@@ -246,11 +246,6 @@ abstract class LineActionState<T extends StatefulWidget>
           ..reset()
           ..animateXY1(2000, 2000);
         break;
-      case 'O':
-        captureImg(() {
-          controller!.state!.capture();
-        });
-        break;
     }
   }
 }
@@ -333,11 +328,6 @@ abstract class BarActionState<T extends StatefulWidget> extends ActionState<T> {
         controller.animator!
           ..reset()
           ..animateXY1(2000, 2000);
-        break;
-      case 'K':
-        captureImg(() {
-          controller.state!.capture();
-        });
         break;
     }
   }
@@ -422,11 +412,6 @@ abstract class HorizontalBarActionState<T extends StatefulWidget>
         controller.animator!
           ..reset()
           ..animateXY1(2000, 2000);
-        break;
-      case 'K':
-        captureImg(() {
-          controller.state!.capture();
-        });
         break;
     }
   }
@@ -530,11 +515,6 @@ abstract class PieActionState<T extends StatefulWidget> extends ActionState<T> {
         controller.animator!
           ..reset()
           ..animateXY1(1400, 1400);
-        break;
-      case 'N':
-        captureImg(() {
-          controller.state!.capture();
-        });
         break;
     }
   }
@@ -672,11 +652,6 @@ abstract class ScatterActionState<T extends StatefulWidget>
         controller.autoScaleMinMaxEnabled = !controller.autoScaleMinMaxEnabled;
         controller.state!.setStateIfNotDispose();
         break;
-      case 'J':
-        captureImg(() {
-          controller.state!.capture();
-        });
-        break;
     }
   }
 }
@@ -750,11 +725,6 @@ abstract class BubbleActionState<T extends StatefulWidget>
       case 'I':
         controller.autoScaleMinMaxEnabled = !controller.autoScaleMinMaxEnabled;
         controller.state!.setStateIfNotDispose();
-        break;
-      case 'J':
-        captureImg(() {
-          controller.state!.capture();
-        });
         break;
     }
   }
@@ -830,11 +800,6 @@ abstract class CandlestickActionState<T extends StatefulWidget>
       case 'I':
         controller.autoScaleMinMaxEnabled = !controller.autoScaleMinMaxEnabled;
         controller.state!.setStateIfNotDispose();
-        break;
-      case 'J':
-        captureImg(() {
-          controller.state!.capture();
-        });
         break;
       case 'K':
         for (ICandleDataSet set in controller.data!.dataSets!) {
@@ -948,11 +913,6 @@ abstract class RadarActionState<T extends StatefulWidget>
         controller.animator!
           ..reset()
           ..animateXY1(1400, 1400);
-        break;
-      case 'N':
-        captureImg(() {
-          controller.state!.capture();
-        });
         break;
     }
   }

@@ -91,11 +91,6 @@ class EvenMoreRealtimeState extends ActionState<EvenMoreRealtime>
         _addMultiple();
         controller!.state!.setStateIfNotDispose();
         break;
-      case 'E':
-        captureImg(() {
-          controller!.state!.capture();
-        });
-        break;
       case 'F':
         _updateEntry();
         break;

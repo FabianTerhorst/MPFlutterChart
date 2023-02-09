@@ -95,11 +95,6 @@ class EvenMoreDynamicState extends ActionState<EvenMoreDynamic>
         controller!.data = null;
         controller!.state!.setStateIfNotDispose();
         break;
-      case 'G':
-        captureImg(() {
-          controller!.state!.capture();
-        });
-        break;
     }
   }
 
